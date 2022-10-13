@@ -25,6 +25,7 @@
         <div>
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
                 <a class="navbar-brand" href="#">
+                    <img src="imgs/Project_Verwalten_Logo1.png" width="30" height="30"/>
                     Verwalten
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menubarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,21 +48,21 @@
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server">View Projects</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lnkProjs" runat="server" OnClick="lnkProjs_Click">Your Projects</asp:LinkButton>
                         </li>
                         
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server">Login</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lnkLogin" runat="server" OnClick="lnkLogin_Click" >Login</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server">Sign Up</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lnkSignUp" runat="server" OnClick="lnkSignUp_Click" >Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">Logout</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lnkLogOut" runat="server">Logout</asp:LinkButton>
                         </li>
 
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server">User Profile</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lnkUserProfile" runat="server" OnClick="lnkUserProfile_Click">User Profile</asp:LinkButton>
                         </li>
                     </ul>
                 </div>
@@ -77,29 +78,41 @@
         <footer>
             <div id="footer1" class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p>
-                            <%-- <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
-                            &nbsp
-                             <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton> --%>
-                        </p>
-
+                    <div class="col-md-3">
+                        <img class="img-fluid" src="imgs/Project_Verwalten_Logo1.png" width="50" height="50"/>
+                        <p>Verwalten is the best web app for managing projects.<a href="#"> ... Read more ... </a></p>
+                        <a style="color: rgb(66, 4, 16) ;" href="https://www.facebook.com/"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                        <a style="color: rgb(66, 4, 16) ;" href="https://www.instagram.com/"><i class="fa-brands fa-2x fa-instagram"></i></a>
+                        <a style="color: rgb(66, 4, 16) ;" href="https://www.twitter.com/"><i class="fa-brands fa-2x fa-twitter"></i></a>
+                        <a style="color: rgb(66, 4, 16) ;" href="https://www.youtube.com/"><i class="fa-brands fa-2x fa-youtube"></i></a>
                     </div>
-
-                </div>
+                    <div class="col-md-3">
+                        <h3>Important Links</h3>
+                        <a style="color: rgb(66, 4, 16) ;" href="#">Privacy Policy</a><br>
+                        <a style="color: rgb(66, 4, 16) ;" href="#">Youtube Channel</a><br>
+                        <a style="color: rgb(66, 4, 16) ;" href="#">Blog Articles</a><br>
+                        <a style="color: rgb(66, 4, 16) ;" href="#">Social Media</a><br>
+                    </div>    
+                    <div class="col-md-3">
+                        <h3>Features</h3>
+                        <a style="color: rgb(66, 4, 16) ;" href="MobileReady.html">Mobile Ready</a><br>
+                        <a style="color: rgb(66, 4, 16) ;" href="SecureManagement.html">Secure Managment</a><br>
+                        <a style="color: rgb(66, 4, 16) ;" href="Tasking.html">Tasking</a><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Contact Us</h3>
+                        <a style="color: rgb(66, 4, 16) ;" class="" href="tel:+639123456789"> <i class="fa-solid fa-phone"></i> +639123456789 </a><br>
+                        <a style="color: rgb(66, 4, 16) ;" class="" href="mailto:verwalten@compani.com"> <i class="fa-solid fa-envelope"></i> project.verwalten@compani.com </a><br>
+                        <div class="embed-responsive embed-responsive-16by9"> 
+                        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5912510349326!2d123.87894531433366!3d10.29448077072014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99c015a4bf233%3A0x95d783198f4634f8!2sCebu%20Institute%20of%20Technology%20-%20University!5e0!3m2!1sen!2sph!4v1664513132356!5m2!1sen!2sph" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    </div>
             </div>
             <div id="footer2" class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p style="color:whitesmoke">&copy All rights reserved.
+                        <p style="color:whitesmoke">&copy All rights reserved.</p>
                     </div>
                 </div>
             </div>

@@ -27,15 +27,15 @@
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <asp:Label ID="Label1" AssociatedControlID="TextBox1" runat="server" Text="First Name"></asp:Label>
-                                    <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true" ID="TextBox1" runat="server" placeholder ="First Name"></asp:TextBox>
+                                    <asp:Label ID="lblFirstName" AssociatedControlID="tbxFirstName" runat="server" Text="First Name"></asp:Label>
+                                    <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true" ID="tbxFirstName" runat="server" placeholder ="First Name"></asp:TextBox>
                                 </div>
                                 <div class="mb-3">
-                                    <asp:Label ID="Label2" AssociatedControlID="TextBox2" runat="server" Text="Middle Name"></asp:Label>
-                                    <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true" ID="TextBox2" runat="server" placeholder ="Middle Name"></asp:TextBox>
+                                    <asp:Label ID="lblMidName" AssociatedControlID="tbxMidName" runat="server" Text="Middle Name"></asp:Label>
+                                    <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true" ID="tbxMidName" runat="server" placeholder ="Middle Name"></asp:TextBox>
                                 </div>
                                 <div class="mb-3">
-                                    <asp:Label ID="Label3" AssociatedControlID="TextBox3" runat="server" Text="Last Name"></asp:Label>
+                                    <asp:Label ID="lblLastName" AssociatedControlID="tbxLastName" runat="server" Text="Last Name"></asp:Label>
                                     <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true" ID="TextBox3" runat="server" placeholder ="Last Name"></asp:TextBox>
                                 </div>
                             </div>
@@ -43,12 +43,12 @@
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <asp:Label ID="Label4" AssociatedControlID="TextBox4" runat="server" Text="Date of Birth"></asp:Label>
-                                   <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true"  ID="TextBox4" runat="server" TextMode="Date"></asp:TextBox>
+                                <asp:Label ID="lblDOB" AssociatedControlID="tbxDOB" runat="server" Text="Date of Birth"></asp:Label>
+                                   <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true"  ID="tbxDOB" runat="server" TextMode="Date"></asp:TextBox>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <asp:Label ID="LabelDD1" AssociatedControlID="DropDownList1" runat="server" Text="Gender"></asp:Label>
-                                <asp:DropDownList CssClass="form-control" ID="DropDownList1" Enabled="false" runat="server">
+                                <asp:Label ID="lblGender" AssociatedControlID="ddlGender" runat="server" Text="Gender"></asp:Label>
+                                <asp:DropDownList CssClass="form-control-plaintext" ID="ddlGender" Enabled="false" runat="server">
                                     <asp:ListItem Text="Select" Value="select" />
                                     <asp:ListItem Text="Male" Value="male" />
                                     <asp:ListItem Text="Female" Value="female" />
@@ -61,16 +61,16 @@
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <asp:Label ID="Label5" AssociatedControlID="TextBox5" runat="server" Text="Contact No."></asp:Label>
+                                    <asp:Label ID="lblContactNo" AssociatedControlID="tbxContactNo" runat="server" Text="Contact No."></asp:Label>
                                     <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true"  ID="TextBox5" runat="server" placeholder ="Contact No."></asp:TextBox>
                                 </div>
                                 <div class="mb-3">
-                                    <asp:Label ID="Label6" AssociatedControlID="TextBox6" runat="server" Text="E-mail Address"></asp:Label>
-                                    <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true" ID="TextBox6" runat="server" placeholder ="E-mail Address" TextMode="Email"></asp:TextBox>
+                                    <asp:Label ID="lblEmail" AssociatedControlID="tbxEmail" runat="server" Text="E-mail Address"></asp:Label>
+                                    <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true" ID="tbxEmail" runat="server" placeholder ="E-mail Address" TextMode="Email"></asp:TextBox>
                                 </div>
                                 <div class="mb-3">
-                                    <asp:Label ID="Label7" AssociatedControlID="TextBox7" runat="server" Text="Full Address"></asp:Label>
-                                    <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true"  ID="TextBox7" runat="server" placeholder ="Full Address" TextMode="Multiline" Rows="3"></asp:TextBox>
+                                    <asp:Label ID="lblFullAddress" AssociatedControlID="tbxFullAddress" runat="server" Text="Full Address"></asp:Label>
+                                    <asp:TextBox CssClass="form-control-plaintext" ReadOnly="true"  ID="tbxFullAddress" runat="server" placeholder ="Full Address" TextMode="Multiline" Rows="3"></asp:TextBox>
                                 </div>
                             </div>
                         </div>

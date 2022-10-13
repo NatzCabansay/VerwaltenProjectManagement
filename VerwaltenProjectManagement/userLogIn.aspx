@@ -25,18 +25,18 @@
                         <div class="row">
                             <div class="col">
                                 <div class="mb-3">
-                                    <asp:Label ID="Label1" AssociatedControlID="TextBox1" runat="server" Text="Name"></asp:Label>
-                                    <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder ="Name"></asp:TextBox>
+                                    <asp:Label ID="lblUserID" AssociatedControlID="tbxUserID" runat="server" Text="User ID"></asp:Label>
+                                    <asp:TextBox CssClass="form-control" ID="tbxUserID" runat="server" placeholder ="User ID"></asp:TextBox>
                                 </div>
                                 <div class="mb-3">
-                                    <asp:Label ID="Label2" AssociatedControlID="TextBox2" runat="server" Text="Password"></asp:Label>
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder ="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:Label ID="lblPassword" AssociatedControlID="tbxPassword" runat="server" Text="Password"></asp:Label>
+                                    <asp:TextBox CssClass="form-control" ID="tbxPassword" runat="server" placeholder ="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                                 <div class="d-grid gap-2 mb-3">
-                                    <asp:Button CssClass="btn btn-primary btn-lg" ID="Button1" runat="server" Text="Log-In" />
+                                    <asp:Button CssClass="btn btn-primary btn-lg" ID="btnLogin" runat="server" Text="Log-In" />
                                 </div>
                                 <div class="d-grid gap-2 mb-3">
-                                    <a href="userSignUp.aspx" class="btn btn-info btn-lg" id="Button2">Sign-Up</a>
+                                    <a href="userSignUp.aspx" class="btn btn-info btn-lg" id="btnSignUp">Sign-Up</a>
                                 </div>
                             </div>
                         </div>
