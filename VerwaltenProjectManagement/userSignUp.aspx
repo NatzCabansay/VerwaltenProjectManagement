@@ -60,11 +60,11 @@
                             <div class="col-md-6 mb-3">
                                 <asp:Label ID="lblGender" AssociatedControlID="ddlGender" runat="server" Text="Gender"></asp:Label>
                                 <asp:DropDownList CssClass="form-control" ID="ddlGender" runat="server">
-                                    <asp:ListItem Text="Select" Value="select" />
-                                    <asp:ListItem Text="Male" Value="male" />
-                                    <asp:ListItem Text="Female" Value="female" />
-                                    <asp:ListItem Text="Non-Binary" Value="nonbinary" />
-                                    <asp:ListItem Text="Prefer Not To Say" Value="prefer_not_to_say" />
+                                    <asp:ListItem Text="Select" Value="Select" />
+                                    <asp:ListItem Text="Male" Value="Male" />
+                                    <asp:ListItem Text="Female" Value="Female" />
+                                    <asp:ListItem Text="Non-Binary" Value="Non-Binary" />
+                                    <asp:ListItem Text="Prefer Not To Say" Value="Prefer Not To Say" />
                                 </asp:DropDownList>
                             </div>
                         </div>

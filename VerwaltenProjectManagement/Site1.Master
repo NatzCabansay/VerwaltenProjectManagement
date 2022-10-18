@@ -50,7 +50,7 @@
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lnkProjs" runat="server" OnClick="lnkProjs_Click">Your Projects</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lnkProjs" runat="server" OnClick="lnkProjs_Click" Visible="False">Your Projects</asp:LinkButton>
                         </li>
                         
                         <li class="nav-item active">
@@ -60,11 +60,11 @@
                             <asp:LinkButton class="nav-link" ID="lnkSignUp" runat="server" OnClick="lnkSignUp_Click" >Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lnkLogOut" runat="server">Logout</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lnkLogOut" runat="server" OnClick="lnkLogOut_Click" Visible="False">Logout</asp:LinkButton>
                         </li>
 
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lnkUserProfile" runat="server" OnClick="lnkUserProfile_Click">User Profile</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lnkUserProfile" runat="server" OnClick="lnkUserProfile_Click" Visible="False">User Profile</asp:LinkButton>
                         </li>
                     </ul>
                 </div>

@@ -92,6 +92,7 @@ namespace VerwaltenProjectManagement
                 con.Close();
 
                 Response.Write("<script>alert('Sign up successful! Go to User Login to Login')</script>");
+                Response.Redirect("userLogIn.aspx");
 
             }
             catch (Exception ex)

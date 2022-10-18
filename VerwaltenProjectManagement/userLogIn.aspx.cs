@@ -49,8 +49,12 @@ namespace VerwaltenProjectManagement
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<script>alert('Hello, "+dr.GetValue(0).ToString()+"');</script>");
+                        Response.Write("<script>alert('Hello, "+dr.GetValue(0).ToString()+"!');</script>");
+                        Session["username"] = dr.GetValue(0).ToString();
+                        Session["full name"] = String.Format("{0} {1}", dr.GetValue(1).ToString(), dr.GetValue(3).ToString());
+                        Session["role"] = "user";
                     }
+                    Response.Redirect("homepage.aspx");
                 }
                 else
                 {
