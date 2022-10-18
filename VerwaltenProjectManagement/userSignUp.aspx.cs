@@ -15,7 +15,10 @@ namespace VerwaltenProjectManagement
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (this.IsPostBack)
+            {
+                tbxPassword.Attributes["value"] = tbxPassword.Text;
+            }
         }
         
         //clicking on sign up button
@@ -97,6 +100,16 @@ namespace VerwaltenProjectManagement
             }
         }
 
-
+        protected void cbxShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxShowPass.Checked == true)
+            {
+                tbxPassword.TextMode = TextBoxMode.SingleLine;
+            }
+            else
+            {
+                tbxPassword.TextMode = TextBoxMode.Password;
+            }
+        }
     }
 }

@@ -25,8 +25,8 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <asp:Label ID="lblUserID" AssociatedControlID="tbxUserrID" runat="server" Text="User ID (10 characters maximum)"></asp:Label>
-                                <asp:TextBox ID="tbxUserID" runat="server" placeholder="User ID (10 chars)"></asp:TextBox>
+                                <asp:Label ID="lblUserID" AssociatedControlID="tbxUserID" runat="server" Text="User ID (10 characters maximum)"></asp:Label>
+                                <asp:TextBox CssClass="form-control" ID="tbxUserID" runat="server" placeholder="User ID (10 chars)"></asp:TextBox>
                             </div>
                         </div>
                         <div class="row">
@@ -99,8 +99,18 @@
                         </div>
                         <div class="row">
                             <div class="col">
+                                <asp:CheckBox ID="cbxShowPass" runat="server" Text="Show Password" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
                                 <div class="d-grid gap-2 mb-3">
                                     <asp:Button CssClass="btn btn-primary btn-lg" ID="btnUpdate" runat="server" Text="Update" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-grid gap-2 mb-3">
+                                    <asp:Button CssClass="btn btn-danger btn-lg" ID="btnDelete" runat="server" Text="Delete" />
                                 </div>
                             </div>
                         </div>

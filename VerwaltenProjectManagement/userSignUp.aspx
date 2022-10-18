@@ -83,10 +83,17 @@
                                     <asp:Label ID="lblFullAddress" AssociatedControlID="tbxFullAddress" runat="server" Text="Full Address"></asp:Label>
                                     <asp:TextBox CssClass="form-control" ID="tbxFullAddress" runat="server" placeholder ="Full Address" TextMode="Multiline" Rows="3"></asp:TextBox>
                                 </div>
-                                <div class="mb-3">
-                                    <asp:Label ID="lblPassword" AssociatedControlID="tbxPassword" runat="server" Text="Password"></asp:Label>
-                                    <asp:TextBox CssClass="form-control" ID="tbxPassword" runat="server" placeholder ="Password" TextMode="Password"></asp:TextBox>
-                                </div>
+                                <asp:UpdatePanel ID="updpPassword" runat="server">
+                                    <ContentTemplate>
+                                        <div class="mb-3">
+                                            <asp:Label ID="lblPassword" AssociatedControlID="tbxPassword" runat="server" Text="Password"></asp:Label>
+                                            <asp:TextBox CssClass="form-control" ID="tbxPassword" runat="server" placeholder ="Password" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                        <div class="mb-3">
+                                            <asp:CheckBox ID="cbxShowPass" runat="server" Text="Show Password" AutoPostBack="true" OnCheckedChanged="cbxShowPass_CheckedChanged"/>
+                                        </div>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
                                 <div class="d-grid gap-2 mb-3">
                                     <asp:Button CssClass="btn btn-primary btn-lg" ID="btnSignUp" runat="server" Text="Sign-Up" OnClick="btnSignUp_Click" />
                                 </div>

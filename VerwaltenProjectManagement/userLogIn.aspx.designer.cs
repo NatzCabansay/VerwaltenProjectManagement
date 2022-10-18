@@ -33,6 +33,15 @@ namespace VerwaltenProjectManagement
         protected global::System.Web.UI.WebControls.TextBox tbxUserID;
 
         /// <summary>
+        /// updpPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updpPassword;
+
+        /// <summary>
         /// lblPassword control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,24 @@ namespace VerwaltenProjectManagement
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxPassword;
+
+        /// <summary>
+        /// lnkForgotPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkForgotPassword;
+
+        /// <summary>
+        /// cbxShowPass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbxShowPass;
 
         /// <summary>
         /// btnLogin control.
