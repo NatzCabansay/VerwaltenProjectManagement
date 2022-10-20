@@ -2127,9 +2127,11 @@
     <Content Include="homepage.aspx" />
     <Content Include="imgs\Project_Verwalten_Logo1.png" />
     <Content Include="userDashboard.aspx" />
+    <Content Include="userForgotPassword.aspx" />
     <Content Include="userLogIn.aspx" />
     <Content Include="userProfile.aspx" />
     <Content Include="userSignUp.aspx" />
+    <Content Include="viewProjectDetails.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2155,6 +2157,13 @@
     <Compile Include="userDashboard.aspx.designer.cs">
       <DependentUpon>userDashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="userForgotPassword.aspx.cs">
+      <DependentUpon>userForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userForgotPassword.aspx.designer.cs">
+      <DependentUpon>userForgotPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="userLogIn.aspx.cs">
       <DependentUpon>userLogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2175,6 +2184,13 @@
     </Compile>
     <Compile Include="userSignUp.aspx.designer.cs">
       <DependentUpon>userSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewProjectDetails.aspx.cs">
+      <DependentUpon>viewProjectDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewProjectDetails.aspx.designer.cs">
+      <DependentUpon>viewProjectDetails.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

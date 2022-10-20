@@ -14,3 +14,7 @@
 #footer2{
     background-color: #fb5056;
 }
+
+.modal-part-sticky{
+    position: sticky;
+}

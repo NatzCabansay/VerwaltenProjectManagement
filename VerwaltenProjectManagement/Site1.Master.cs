@@ -36,6 +36,16 @@ namespace VerwaltenProjectManagement
                     lnkUserProfile.Visible = true;
                     lnkUserProfile.Text = String.Format("{0} Profile", Session["username"].ToString());
                 }
+                else if (Session["role"].Equals("quasiuser"))
+                {
+                    //forgot password
+                    lnkLogin.Visible = false;
+                    lnkSignUp.Visible = false;
+
+                    lnkLogOut.Visible = false;
+                    lnkProjs.Visible = false;
+                    lnkUserProfile.Visible = false;
+                }
             }
             catch(Exception ex)
             {

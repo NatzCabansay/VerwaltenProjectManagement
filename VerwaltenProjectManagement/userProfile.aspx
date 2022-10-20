@@ -26,7 +26,7 @@
                         <div class="row">
                             <div class="col">
                                 <asp:Label ID="lblUserID" AssociatedControlID="tbxUserID" runat="server" Text="User ID (10 characters maximum)"></asp:Label>
-                                <asp:TextBox CssClass="form-control" ID="tbxUserID" runat="server" placeholder="User ID (10 chars)"></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="tbxUserID" runat="server" placeholder="User ID (10 chars)" ReadOnly="true"></asp:TextBox>
                             </div>
                         </div>
                         <div class="row">
@@ -58,11 +58,11 @@
                             <div class="col-md-6 mb-3">
                                 <asp:Label ID="lblGender" AssociatedControlID="ddlGender" runat="server" Text="Gender"></asp:Label>
                                 <asp:DropDownList CssClass="form-control" ID="ddlGender" runat="server">
-                                    <asp:ListItem Text="Select" Value="select" />
-                                    <asp:ListItem Text="Male" Value="male" />
-                                    <asp:ListItem Text="Female" Value="female" />
-                                    <asp:ListItem Text="Non-Binary" Value="nonbinary" />
-                                    <asp:ListItem Text="Prefer Not To Say" Value="prefer_not_to_say" />
+                                    <asp:ListItem Text="Select" Value="Select" />
+                                    <asp:ListItem Text="Male" Value="Male" />
+                                    <asp:ListItem Text="Female" Value="Female" />
+                                    <asp:ListItem Text="Non-Binary" Value="Non-Binary" />
+                                    <asp:ListItem Text="Prefer Not To Say" Value="Prefer Not To Say" />
                                 </asp:DropDownList>
                             </div>
                         </div>
@@ -83,34 +83,44 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <asp:Label ID="lblPassword" AssociatedControlID="tbxPassword" runat="server" Text="Password"></asp:Label>
-                                    <asp:TextBox CssClass="form-control" ID="tbxPassword" runat="server" placeholder ="Password" TextMode="Password" ReadOnly="true"></asp:TextBox>
+
+                        <asp:UpdatePanel ID="updpPassword" runat="server">
+                            <ContentTemplate>
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <asp:Label ID="lblPassword" AssociatedControlID="tbxPassword" runat="server" Text="Password"></asp:Label>
+                                            <asp:TextBox CssClass="form-control" ID="tbxPassword" runat="server" placeholder ="Password" TextMode="Password" ReadOnly="true"></asp:TextBox>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <asp:Label ID="lblNewPassword" AssociatedControlID="tbxNewPassword" runat="server" Text="New Password"></asp:Label>
+                                            <asp:TextBox CssClass="form-control" ID="tbxNewPassword" runat="server" placeholder ="New Password" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <asp:Label ID="lblNewPassword" AssociatedControlID="tbxNewPassword" runat="server" Text="New Password"></asp:Label>
-                                    <asp:TextBox CssClass="form-control" ID="tbxNewPassword" runat="server" placeholder ="New Password" TextMode="Password"></asp:TextBox>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <asp:CheckBox ID="cbxShowPass" runat="server" Text="Show Password" AutoPostBack="true" OnCheckedChanged="cbxShowPass_CheckedChanged"/>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <asp:CheckBox ID="cbxShowPass" runat="server" Text="Show Password" />
-                            </div>
-                        </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+
+                       
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="d-grid gap-2 mb-3">
-                                    <asp:Button CssClass="btn btn-primary btn-lg" ID="btnUpdate" runat="server" Text="Update" />
+                                    <asp:Button CssClass="btn btn-primary btn-lg" ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="d-grid gap-2 mb-3">
-                                    <asp:Button CssClass="btn btn-danger btn-lg" ID="btnDelete" runat="server" Text="Delete" />
+                                    <asp:Button CssClass="btn btn-danger btn-lg" ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" />
                                 </div>
                             </div>
                         </div>

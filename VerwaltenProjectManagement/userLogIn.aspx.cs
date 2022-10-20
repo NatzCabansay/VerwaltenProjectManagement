@@ -54,7 +54,7 @@ namespace VerwaltenProjectManagement
                         Session["full name"] = String.Format("{0} {1}", dr.GetValue(1).ToString(), dr.GetValue(3).ToString());
                         Session["role"] = "user";
                     }
-                    Response.Redirect("homepage.aspx");
+                    Response.Redirect("userDashboard.aspx");
                 }
                 else
                 {
@@ -72,7 +72,7 @@ namespace VerwaltenProjectManagement
 
         protected void lnkForgotPassword_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("userForgotPassword.aspx");
         }
     }
 }
