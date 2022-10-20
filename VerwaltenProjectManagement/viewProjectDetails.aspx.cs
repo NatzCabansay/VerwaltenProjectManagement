@@ -16,8 +16,15 @@ namespace VerwaltenProjectManagement
         protected void Page_Load(object sender, EventArgs e)
         {
             loadProjDetails();
+            loadTaskDetails();
             viewTasks.Visible = true;
             addOrEditTasks.Visible = false;
+
+            if (this.IsPostBack)
+            {
+                loadProjDetails();
+                loadTaskDetails();
+            }
         }
 
         protected void btnBack_Click(object sender, EventArgs e)
